@@ -17,3 +17,6 @@ Pandas, Numpy for data wrangling
 sklearn for train_test_split 
 
 turicreate for  data modelling
+
+
+We obtained a MAP@K value of 89.5% on an average, it might however vary from 0.72 to 0.90 depending on the sample subset we obtain and the test data we aim to test.
