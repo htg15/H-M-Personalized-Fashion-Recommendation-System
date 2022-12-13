@@ -1,0 +1,590 @@
+[{'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+-----------+--------+-------+
+|          customer_id          | cutoff | precision | recall | count |
++-------------------------------+--------+-----------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |    0.0    |  0.0   |   1   |
++-------------------------------+--------+-----------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+----------------------+----------------------+
+| cutoff |      precision       |        recall        |
++--------+----------------------+----------------------+
+|   1    | 0.00875736071266798  | 0.005352559263173784 |
+|   2    | 0.007398459912426393 | 0.009123928397671423 |
+|   3    | 0.007297800593889989 | 0.013873789991108422 |
+|   4    | 0.006945492979012531 | 0.017617238147964422 |
+|   5    | 0.006885097387890694 | 0.022150682206548134 |
+|   6    | 0.007373295082792274 | 0.02832816855163225  |
+|   7    | 0.007851426845840299 | 0.03554292520772967  |
+|   8    | 0.007794805979163518 | 0.04048985138370612  |
+|   9    | 0.008052745482913118 | 0.046479080836622715 |
+|   10   | 0.008123207005888637 | 0.05179155612116502  |
++--------+----------------------+----------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+------+-------+
+|          customer_id          | rmse | count |
++-------------------------------+------+-------+
+| 34bfb424529e774b33124c210b... | 0.0  |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 0.0  |   1   |
+| 4b6ac088a6f8512493395df7c5... | 0.0  |   2   |
+| 6323bc8ce3d261847e8acb8401... | 0.0  |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 0.0  |   1   |
+| 8dbea0c23dad3e042764ad592a... | 0.0  |   1   |
+| 9eeb04497f3c28659147d97722... | 0.0  |   1   |
+| 613fcb31250f9da17ca8e4b055... | 0.0  |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 0.0  |   4   |
+| 0d407f91c43e757976e9058eef... | 0.0  |   4   |
++-------------------------------+------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+------+-------+
+| article_id | rmse | count |
++------------+------+-------+
+| 689109001  | 0.0  |   39  |
+| 554598001  | 0.0  |   46  |
+| 611415001  | 0.0  |   50  |
+| 658298001  | 0.0  |   33  |
+| 730683001  | 0.0  |   60  |
+| 372860001  | 0.0  |  180  |
+| 677930023  | 0.0  |   30  |
+| 610776028  | 0.0  |   26  |
+| 688537011  | 0.0  |   69  |
+| 684209013  | 0.0  |   70  |
++------------+------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 0.0}, {'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+---------------------+--------+-------+
+|          customer_id          | cutoff |      precision      | recall | count |
++-------------------------------+--------+---------------------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |         1.0         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |         0.5         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |  0.3333333333333333 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |         0.25        |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |         0.2         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    | 0.16666666666666666 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    | 0.14285714285714285 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |        0.125        |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |  0.1111111111111111 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |         0.1         |  1.0   |   1   |
++-------------------------------+--------+---------------------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+----------------------+---------------------+
+| cutoff |      precision       |        recall       |
++--------+----------------------+---------------------+
+|   1    | 0.12079118224369627  | 0.08304651419176562 |
+|   2    | 0.08893250792692134  | 0.11822371054214655 |
+|   3    | 0.07151844582012166  |  0.1396340674273635 |
+|   4    | 0.06035784387739681  | 0.15576406414395289 |
+|   5    | 0.05269515325381247  |  0.1693737432564252 |
+|   6    | 0.047813176304796534 | 0.18283351188379132 |
+|   7    | 0.04378680356333993  | 0.19495007777130682 |
+|   8    | 0.040276309829382406 | 0.20428029785571675 |
+|   9    | 0.03744526649554611  |  0.2131839740778288 |
+|   10   | 0.034923750566208646 | 0.22031712478639842 |
++--------+----------------------+---------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+--------------------+-------+
+|          customer_id          |        rmse        | count |
++-------------------------------+--------------------+-------+
+| 34bfb424529e774b33124c210b... | 0.9867683928384076 |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 0.9696066975593567 |   1   |
+| 4b6ac088a6f8512493395df7c5... | 0.9887074541969548 |   2   |
+| 6323bc8ce3d261847e8acb8401... | 0.9492849707603455 |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 0.9083481431007385 |   1   |
+| 8dbea0c23dad3e042764ad592a... | 0.9606353243192037 |   1   |
+| 9eeb04497f3c28659147d97722... |        1.0         |   1   |
+| 613fcb31250f9da17ca8e4b055... |        1.0         |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 0.9695662565802551 |   4   |
+| 0d407f91c43e757976e9058eef... | 0.9781067937418607 |   4   |
++-------------------------------+--------------------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+--------------------+-------+
+| article_id |        rmse        | count |
++------------+--------------------+-------+
+| 689109001  | 0.9051292205077116 |   39  |
+| 554598001  | 0.9928034198785411 |   46  |
+| 611415001  | 0.9925077367313949 |   50  |
+| 658298001  | 0.9927351096065223 |   33  |
+| 730683001  | 0.9880858410066922 |   60  |
+| 372860001  | 0.9716340132629602 |  180  |
+| 677930023  | 0.9904644134174909 |   30  |
+| 610776028  | 0.9805814403971141 |   26  |
+| 688537011  | 0.8936036329050484 |   69  |
+| 684209013  | 0.8779800992922198 |   70  |
++------------+--------------------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 0.9783099015455605}, {'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+-----------+--------+-------+
+|          customer_id          | cutoff | precision | recall | count |
++-------------------------------+--------+-----------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |    0.0    |  0.0   |   1   |
++-------------------------------+--------+-----------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-----------------------+----------------------+
+| cutoff |       precision       |        recall        |
++--------+-----------------------+----------------------+
+|   1    |  0.008757360712667979 | 0.005352559263173789 |
+|   2    |  0.007398459912426395 | 0.009123928397671401 |
+|   3    |  0.007297800593889985 | 0.013873789991108429 |
+|   4    |  0.006945492979012532 | 0.017617238147964422 |
+|   5    |  0.006885097387890692 | 0.022150682206548134 |
+|   6    | 0.0073732950827922784 | 0.028328168551632248 |
+|   7    |  0.007851426845840276 | 0.03554292520772969  |
+|   8    |  0.007794805979163517 | 0.040489851383706095 |
+|   9    |  0.008052745482913131 | 0.046479080836622715 |
+|   10   |  0.008123207005888628 | 0.05179155612116502  |
++--------+-----------------------+----------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+------+-------+
+|          customer_id          | rmse | count |
++-------------------------------+------+-------+
+| 34bfb424529e774b33124c210b... | 1.0  |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 1.0  |   1   |
+| 4b6ac088a6f8512493395df7c5... | 1.0  |   2   |
+| 6323bc8ce3d261847e8acb8401... | 1.0  |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 1.0  |   1   |
+| 8dbea0c23dad3e042764ad592a... | 1.0  |   1   |
+| 9eeb04497f3c28659147d97722... | 1.0  |   1   |
+| 613fcb31250f9da17ca8e4b055... | 1.0  |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 1.0  |   4   |
+| 0d407f91c43e757976e9058eef... | 1.0  |   4   |
++-------------------------------+------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+------+-------+
+| article_id | rmse | count |
++------------+------+-------+
+| 689109001  | 1.0  |   39  |
+| 554598001  | 1.0  |   46  |
+| 611415001  | 1.0  |   50  |
+| 658298001  | 1.0  |   33  |
+| 730683001  | 1.0  |   60  |
+| 372860001  | 1.0  |  180  |
+| 677930023  | 1.0  |   30  |
+| 610776028  | 1.0  |   26  |
+| 688537011  | 1.0  |   69  |
+| 684209013  | 1.0  |   70  |
++------------+------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 1.0}]
+[{'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+-----------+--------+-------+
+|          customer_id          | cutoff | precision | recall | count |
++-------------------------------+--------+-----------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |    0.0    |  0.0   |   1   |
++-------------------------------+--------+-----------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+----------------------+----------------------+
+| cutoff |      precision       |        recall        |
++--------+----------------------+----------------------+
+|   1    | 0.00875736071266798  | 0.005352559263173784 |
+|   2    | 0.007398459912426393 | 0.009123928397671423 |
+|   3    | 0.007297800593889989 | 0.013873789991108422 |
+|   4    | 0.006945492979012531 | 0.017617238147964422 |
+|   5    | 0.006885097387890694 | 0.022150682206548134 |
+|   6    | 0.007373295082792274 | 0.02832816855163225  |
+|   7    | 0.007851426845840299 | 0.03554292520772967  |
+|   8    | 0.007794805979163518 | 0.04048985138370612  |
+|   9    | 0.008052745482913118 | 0.046479080836622715 |
+|   10   | 0.008123207005888637 | 0.05179155612116502  |
++--------+----------------------+----------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+------+-------+
+|          customer_id          | rmse | count |
++-------------------------------+------+-------+
+| 34bfb424529e774b33124c210b... | 0.0  |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 0.0  |   1   |
+| 4b6ac088a6f8512493395df7c5... | 0.0  |   2   |
+| 6323bc8ce3d261847e8acb8401... | 0.0  |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 0.0  |   1   |
+| 8dbea0c23dad3e042764ad592a... | 0.0  |   1   |
+| 9eeb04497f3c28659147d97722... | 0.0  |   1   |
+| 613fcb31250f9da17ca8e4b055... | 0.0  |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 0.0  |   4   |
+| 0d407f91c43e757976e9058eef... | 0.0  |   4   |
++-------------------------------+------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+------+-------+
+| article_id | rmse | count |
++------------+------+-------+
+| 689109001  | 0.0  |   39  |
+| 554598001  | 0.0  |   46  |
+| 611415001  | 0.0  |   50  |
+| 658298001  | 0.0  |   33  |
+| 730683001  | 0.0  |   60  |
+| 372860001  | 0.0  |  180  |
+| 677930023  | 0.0  |   30  |
+| 610776028  | 0.0  |   26  |
+| 688537011  | 0.0  |   69  |
+| 684209013  | 0.0  |   70  |
++------------+------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 0.0}, {'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+---------------------+--------+-------+
+|          customer_id          | cutoff |      precision      | recall | count |
++-------------------------------+--------+---------------------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |         1.0         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |         0.5         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |  0.3333333333333333 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |         0.25        |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |         0.2         |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    | 0.16666666666666666 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    | 0.14285714285714285 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |        0.125        |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |  0.1111111111111111 |  1.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |         0.1         |  1.0   |   1   |
++-------------------------------+--------+---------------------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+----------------------+---------------------+
+| cutoff |      precision       |        recall       |
++--------+----------------------+---------------------+
+|   1    | 0.12079118224369627  | 0.08304651419176562 |
+|   2    | 0.08893250792692134  | 0.11822371054214655 |
+|   3    | 0.07151844582012166  |  0.1396340674273635 |
+|   4    | 0.06035784387739681  | 0.15576406414395289 |
+|   5    | 0.05269515325381247  |  0.1693737432564252 |
+|   6    | 0.047813176304796534 | 0.18283351188379132 |
+|   7    | 0.04378680356333993  | 0.19495007777130682 |
+|   8    | 0.040276309829382406 | 0.20428029785571675 |
+|   9    | 0.03744526649554611  |  0.2131839740778288 |
+|   10   | 0.034923750566208646 | 0.22031712478639842 |
++--------+----------------------+---------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+--------------------+-------+
+|          customer_id          |        rmse        | count |
++-------------------------------+--------------------+-------+
+| 34bfb424529e774b33124c210b... | 0.9867683928384076 |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 0.9696066975593567 |   1   |
+| 4b6ac088a6f8512493395df7c5... | 0.9887074541969548 |   2   |
+| 6323bc8ce3d261847e8acb8401... | 0.9492849707603455 |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 0.9083481431007385 |   1   |
+| 8dbea0c23dad3e042764ad592a... | 0.9606353243192037 |   1   |
+| 9eeb04497f3c28659147d97722... |        1.0         |   1   |
+| 613fcb31250f9da17ca8e4b055... |        1.0         |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 0.9695662565802551 |   4   |
+| 0d407f91c43e757976e9058eef... | 0.9781067937418607 |   4   |
++-------------------------------+--------------------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+--------------------+-------+
+| article_id |        rmse        | count |
++------------+--------------------+-------+
+| 689109001  | 0.9051292205077116 |   39  |
+| 554598001  | 0.9928034198785411 |   46  |
+| 611415001  | 0.9925077367313949 |   50  |
+| 658298001  | 0.9927351096065223 |   33  |
+| 730683001  | 0.9880858410066922 |   60  |
+| 372860001  | 0.9716340132629602 |  180  |
+| 677930023  | 0.9904644134174909 |   30  |
+| 610776028  | 0.9805814403971141 |   26  |
+| 688537011  | 0.8936036329050484 |   69  |
+| 684209013  | 0.8779800992922198 |   70  |
++------------+--------------------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 0.9783099015455605}, {'precision_recall_by_user': Columns:
+	customer_id	str
+	cutoff	int
+	precision	float
+	recall	float
+	count	int
+
+Rows: 119214
+
+Data:
++-------------------------------+--------+-----------+--------+-------+
+|          customer_id          | cutoff | precision | recall | count |
++-------------------------------+--------+-----------+--------+-------+
+| b1960c83de2f65a7fe1337c127... |   1    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   2    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   3    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   4    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   5    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   6    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   7    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   8    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   9    |    0.0    |  0.0   |   1   |
+| b1960c83de2f65a7fe1337c127... |   10   |    0.0    |  0.0   |   1   |
++-------------------------------+--------+-----------+--------+-------+
+[119214 rows x 5 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'precision_recall_overall': Columns:
+	cutoff	int
+	precision	float
+	recall	float
+
+Rows: 18
+
+Data:
++--------+-----------------------+----------------------+
+| cutoff |       precision       |        recall        |
++--------+-----------------------+----------------------+
+|   1    |  0.008757360712667979 | 0.005352559263173789 |
+|   2    |  0.007398459912426395 | 0.009123928397671401 |
+|   3    |  0.007297800593889985 | 0.013873789991108429 |
+|   4    |  0.006945492979012532 | 0.017617238147964422 |
+|   5    |  0.006885097387890692 | 0.022150682206548134 |
+|   6    | 0.0073732950827922784 | 0.028328168551632248 |
+|   7    |  0.007851426845840276 | 0.03554292520772969  |
+|   8    |  0.007794805979163517 | 0.040489851383706095 |
+|   9    |  0.008052745482913131 | 0.046479080836622715 |
+|   10   |  0.008123207005888628 | 0.05179155612116502  |
++--------+-----------------------+----------------------+
+[18 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_user': Columns:
+	customer_id	str
+	rmse	float
+	count	int
+
+Rows: 6623
+
+Data:
++-------------------------------+------+-------+
+|          customer_id          | rmse | count |
++-------------------------------+------+-------+
+| 34bfb424529e774b33124c210b... | 1.0  |   3   |
+| 1f54a372f6b6673dfc2bbeffa4... | 1.0  |   1   |
+| 4b6ac088a6f8512493395df7c5... | 1.0  |   2   |
+| 6323bc8ce3d261847e8acb8401... | 1.0  |   1   |
+| b0169cf53fe17ef242ce4f08e4... | 1.0  |   1   |
+| 8dbea0c23dad3e042764ad592a... | 1.0  |   1   |
+| 9eeb04497f3c28659147d97722... | 1.0  |   1   |
+| 613fcb31250f9da17ca8e4b055... | 1.0  |   1   |
+| 97b906c95e26d0fed39fcb7d8c... | 1.0  |   4   |
+| 0d407f91c43e757976e9058eef... | 1.0  |   4   |
++-------------------------------+------+-------+
+[6623 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_by_item': Columns:
+	article_id	int
+	rmse	float
+	count	int
+
+Rows: 200
+
+Data:
++------------+------+-------+
+| article_id | rmse | count |
++------------+------+-------+
+| 689109001  | 1.0  |   39  |
+| 554598001  | 1.0  |   46  |
+| 611415001  | 1.0  |   50  |
+| 658298001  | 1.0  |   33  |
+| 730683001  | 1.0  |   60  |
+| 372860001  | 1.0  |  180  |
+| 677930023  | 1.0  |   30  |
+| 610776028  | 1.0  |   26  |
+| 688537011  | 1.0  |   69  |
+| 684209013  | 1.0  |   70  |
++------------+------+-------+
+[200 rows x 3 columns]
+Note: Only the head of the SFrame is printed.
+You can use print_rows(num_rows=m, num_columns=n) to print more rows and columns., 'rmse_overall': 1.0}]
