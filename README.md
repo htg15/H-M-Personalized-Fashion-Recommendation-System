@@ -12,10 +12,9 @@ Transaction_subset file, recommendations file are greater than 300 MB and has no
 Libraries used:
 
 Matplotlib, Seaborn for visualizations
+
 Pandas, Numpy for data wrangling
+
 sklearn for train_test_split 
+
 turicreate for  data modelling
-
-
-
-
